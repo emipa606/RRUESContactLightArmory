@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>9a8cf709-d21d-49a9-9bf8-b880ae3a9d6f</ID>
+  <ModName>Risk of Rain: UES Contact Light Armory (Continued)</ModName>
+  <Version>1.0.0.0</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>emipa606</Owner>
+    <Project>RRUESContactLightArmory</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
+
+
+
