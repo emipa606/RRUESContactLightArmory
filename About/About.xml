@@ -1,22 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Risk of Rain: UES Contact Light Armory (Continued)</name>
-  	<packageId>Mlie.RRUESContactLightArmory</packageId>
-	<author>Mlie</author>
-	<url>https://github.com/emipa606/RRUESContactLightArmory</url>
-	<supportedVersions>
-		<li>1.0</li>
-		<li>1.1</li>
-	</supportedVersions>
-	<modDependencies />
-	<loadAfter>
-		<li>jecrell.jecstools</li>
-		<li>Dubwise.DubsPaintShop</li>
-	</loadAfter>
-	<description>Update of Poolers mod for RimWorld 1.1
+  <name>Risk of Rain: UES Contact Light Armory (Continued)</name>
+  <packageId>Mlie.RRUESContactLightArmory</packageId>
+  <author>Mlie</author>
+  <url>https://github.com/emipa606/RRUESContactLightArmory</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter>
+    <li>jecrell.jecstools</li>
+    <li>Dubwise.DubsPaintShop</li>
+  </loadAfter>
+  <description>Update of Poolers mod for RimWorld 1.1
 https://steamcommunity.com/sharedfiles/filedetails/?id=1894199258
 
 [img]https://raw.githubusercontent.com/emipa606/RimWorld-Wrapper/master/Notice.png[/img]
+
+[img]https://i.imgur.com/GYswkZ7.png[/img]
 
 Support-chat:
 https://discord.gg/SuhwVpM

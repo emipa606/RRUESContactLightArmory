@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- MERCENARY / BLADEMARINE -->
+
+  <RoRA_BladeMarine_Armor.label>blademarine armor</RoRA_BladeMarine_Armor.label>
+  <RoRA_BladeMarine_Armor.description>Crafted from lightweight plasteel, this power armor is manufactured for troopers that are adept in close-quarters melee combat.</RoRA_BladeMarine_Armor.description>
+
+
+  <!-- COMMANDO / CONSCRIPT -->
+
+  <RoRA_Conscript_Armor.label>conscript armor</RoRA_Conscript_Armor.label>
+  <RoRA_Conscript_Armor.description>A cheap, easilly produced power armor for military trainees, though it has gained popularity amongst glitterworld insurgents and well-trained pirates for its ease of manufacturing.</RoRA_Conscript_Armor.description>
+
+
+  <!-- ENFORCER / POLICE -->
+
+  <RoRA_Enforcer_Armor.label>enforcer armor</RoRA_Enforcer_Armor.label>
+  <RoRA_Enforcer_Armor.description>A police power armor suitable for urban environments, often used in riots and by guards of high-value assets. Its heavy plating encumbers its wearer but provides more than sufficient defense from small-arms ballistics to molotov fire.</RoRA_Enforcer_Armor.description>
+
+
+  <!-- ENGINEER -->
+
+  <RoRA_Engineer_Armor.label>engineer armor</RoRA_Engineer_Armor.label>
+  <RoRA_Engineer_Armor.description>A bulky power armor boasting integrated precision robotics for construction.</RoRA_Engineer_Armor.description>
+
+
+  <!-- SPECIALIST -->
+
+  <RoRA_Specialist_Armor.label>specialist armor</RoRA_Specialist_Armor.label>
+  <RoRA_Specialist_Armor.description>Heavy duty power armor designed for those who are trained in precision shooting with advanced internal motors that are able to hold the heaviest wieldable guns which also helps in recoil control and maintaining a stable sight picture. Its frame supports the carriage of bulky equipment and ammunition while its plating provides adequate defense against enemy fire.</RoRA_Specialist_Armor.description>
+
+
+  <!-- RANGER -->
+
+  <RoRA_Ranger_Armor.label>ranger armor</RoRA_Ranger_Armor.label>
+  <RoRA_Ranger_Armor.description>Used primarilly by explorers and big game hunters for its low weight with armor thick enough to stop most animal attacks.</RoRA_Ranger_Armor.description>
+
+
+  <!-- MINER -->
+
+  <RoRA_Miner_Armor.label>miner armor</RoRA_Miner_Armor.label>
+  <RoRA_Miner_Armor.description>A HAZMAT suit augmented with durable plating able to withstand harsh environments and the occasional encounters with hostile inhabitants.</RoRA_Miner_Armor.description>
+
+
+</LanguageData>
