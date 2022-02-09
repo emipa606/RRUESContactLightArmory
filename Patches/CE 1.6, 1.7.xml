@@ -110,6 +110,12 @@
             <li>Feet</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RoRA_BladeMarine_Armor"]/apparel/layers</xpath>
+          <value>
+            <li>Middle</li>
+          </value>
+        </li>
         <!-- ================================ CONSCRIPT  ================================ -->
         <li Class="PatchOperationReplace">
           <!-- Conscript Helmet -->
@@ -195,7 +201,13 @@
             <li>Feet</li>
           </value>
         </li>
-        <!-- ================================ ENFORCER  ================================ -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RoRA_Conscript_Armor"]/apparel/layers</xpath>
+          <value>
+            <li>Middle</li>
+          </value>
+        </li>
+        <!-- ================================ ENFORCER helmet  ================================ -->
         <li Class="PatchOperationReplace">
           <!-- Enforcer Helmet -->
           <xpath>Defs/ThingDef[defName="RoRA_Enforcer_Helmet"]/statBases/MaxHitPoints</xpath>
@@ -281,9 +293,15 @@
             <li>Feet</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RoRA_Enforcer_Armor"]/apparel/layers</xpath>
+          <value>
+            <li>Middle</li>
+          </value>
+        </li>
         <!-- ================================ ENGINEER  ================================ -->
+        <!-- Engineer Helmet -->
         <li Class="PatchOperationReplace">
-          <!-- Engineer Helmet -->
           <xpath>Defs/ThingDef[defName="RoRA_Engineer_Helmet"]/statBases/MaxHitPoints</xpath>
           <value>
             <MaxHitPoints>220</MaxHitPoints>
@@ -364,9 +382,15 @@
             <li>Feet</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RoRA_Engineer_Armor"]/apparel/layers</xpath>
+          <value>
+            <li>Middle</li>
+          </value>
+        </li>
         <!-- ================================ SPECIALIST  ================================ -->
+        <!-- Specialist Helmet -->
         <li Class="PatchOperationReplace">
-          <!-- Specialist Helmet -->
           <xpath>Defs/ThingDef[defName="RoRA_Specialist_Helmet"]/statBases/MaxHitPoints</xpath>
           <value>
             <MaxHitPoints>220</MaxHitPoints>
@@ -451,6 +475,12 @@
             <li>Feet</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RoRA_Specialist_Armor"]/apparel/layers</xpath>
+          <value>
+            <li>Middle</li>
+          </value>
+        </li>
         <!-- ================================ RANGER  ================================ -->
         <li Class="PatchOperationReplace">
           <!-- Ranger Helmet -->
@@ -522,6 +552,12 @@
           <value>
             <li>Hands</li>
             <li>Feet</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RoRA_Ranger_Armor"]/apparel/layers</xpath>
+          <value>
+            <li>Middle</li>
           </value>
         </li>
         <!-- ================================ MINER  ================================ -->
@@ -598,6 +634,12 @@
           <value>
             <li>Hands</li>
             <li>Feet</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RoRA_Miner_Armor"]/apparel/layers</xpath>
+          <value>
+            <li>Middle</li>
           </value>
         </li>
       </operations>

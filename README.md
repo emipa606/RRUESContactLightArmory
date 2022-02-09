@@ -1,23 +1,14 @@
 # RRUESContactLightArmory
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Poolers mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1894199258
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/RRUESContactLightArmory]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 This is for 1.0
@@ -33,9 +24,9 @@ I will update this myself when I have the time.
 
 A set of power armors made out of love of both Risk of Rain and Rimworld, balanced to be at the same tier of the vanilla marine armor.
 
-While not completely mandatory, https://steamcommunity.com/sharedfiles/filedetails/?id=932008009]Jec&apos;sTools is required to enable better texture masking for colors.
+While not completely mandatory, https://steamcommunity.com/sharedfiles/filedetails/?id=932008009]Jec'sTools is required to enable better texture masking for colors.
 
-And of course, https://steamcommunity.com/sharedfiles/filedetails/?id=1579516669]Dub&apos;s Paint Shop is required to recolor armor from the default white.
+And of course, https://steamcommunity.com/sharedfiles/filedetails/?id=1579516669]Dub's Paint Shop is required to recolor armor from the default white.
 
 Compatible with Combat Extended 1.5,1.6,1.7 / FastTrack. **Select which patch to use in the mod settings**
 
@@ -108,7 +99,7 @@ Pooler - made with love
 1.0.0 (10/20/2019) - Release
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 

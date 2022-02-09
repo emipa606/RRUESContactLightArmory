@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Risk of Rain: UES Contact Light Armory (Continued)</name>
   <packageId>Mlie.RRUESContactLightArmory</packageId>
@@ -15,11 +15,11 @@
     <li>jecrell.jecstools</li>
     <li>Dubwise.DubsPaintShop</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Poolers mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1894199258
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
@@ -28,7 +28,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1894199258
 	[/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 This is for 1.0
 
@@ -42,9 +42,9 @@ I will update this myself when I have the time.
 
 A set of power armors made out of love of both Risk of Rain and Rimworld, balanced to be at the same tier of the vanilla marine armor.
 
-While not completely mandatory, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=932008009]Jec&apos;sTools[/url] is required to enable better texture masking for colors.
+While not completely mandatory, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=932008009]Jec'sTools[/url] is required to enable better texture masking for colors.
 
-And of course, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1579516669]Dub&apos;s Paint Shop[/url] is required to recolor armor from the default white.
+And of course, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1579516669]Dub's Paint Shop[/url] is required to recolor armor from the default white.
 
 Compatible with Combat Extended 1.5,1.6,1.7 / FastTrack. [b]Select which patch to use in the mod settings[/b]
 
@@ -100,7 +100,7 @@ Pooler - made with love
 1.0.0 (10/20/2019) - Release
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -111,4 +111,3 @@ Pooler - made with love
 [/list]
 </description>
 </ModMetaData>
-
