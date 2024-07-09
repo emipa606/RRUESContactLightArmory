@@ -1,5 +1,8 @@
 # Changelog for RRUESContactLightArmory
 
+1.5.1 - Added sos2 properties for the hazmat-armor
+
+
 1.5.0 - Mod updated for 1.5 and passed autotests
 
 

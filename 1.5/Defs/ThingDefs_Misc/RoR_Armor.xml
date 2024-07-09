@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="RoRArmorMakeableBase" ParentName="ArmorMachineableBase" Abstract="True">
     <tradeability>Sellable</tradeability>
@@ -447,6 +447,8 @@
       <MiningSpeed>0.4</MiningSpeed>
       <MoveSpeed>-0.5</MoveSpeed>
       <ToxicResistance>0.50</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
     </equippedStatOffsets>
     <costList>
       <Steel>100</Steel>
@@ -473,6 +475,7 @@
       </layers>
       <tags>
         <li>SpacerMilitary</li>
+        <li>EVA</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -482,5 +485,10 @@
     <thingCategories Inherit="False">
       <li>Apparel</li>
     </thingCategories>
+    <comps>
+      <li MayRequire="kentington.saveourship2">
+        <compClass>SaveOurShip2.CompEVA</compClass>
+      </li>
+    </comps>
   </ThingDef>
 </Defs>

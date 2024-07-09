@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="RoRHeadgearMakeableBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <tradeability>Sellable</tradeability>
@@ -287,7 +287,7 @@
   <ThingDef ParentName="RoRHeadgearMakeableBase">
     <defName>RoRA_Specialist_Helmet</defName>
     <label>specialist helmet</label>
-    <description>Heavy duty helmet designed for those who are trained in precision shooting with an integrated target acquisition system which helps the power armor to easilly spot an enemy and respond to moving targets.</description>
+    <description>Heavy duty helmet designed for those who are trained in precision shooting with an integrated target acquisition system which helps the power armor to easily spot an enemy and respond to moving targets.</description>
     <graphicData>
       <texPath>Things/Apparel/Head/Specialist_Helmet/SpecialistHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -344,7 +344,7 @@
   <ThingDef ParentName="RoRHeadgearMakeableBase">
     <defName>RoRA_Ranger_Helmet</defName>
     <label>ranger helmet</label>
-    <description>Used primarilly by explorers and big game hunters for its low weight with armor thick enough to stop most animal attacks.</description>
+    <description>Used primarily by explorers and big game hunters for its low weight with armor thick enough to stop most animal attacks.</description>
     <graphicData>
       <texPath>Things/Apparel/Head/Ranger_Helmet/RangerHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -424,6 +424,9 @@
       <MiningSpeed>0.2</MiningSpeed>
       <MoveSpeed>0.15</MoveSpeed>
       <ToxicResistance>0.50</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
     </equippedStatOffsets>
     <costList>
       <Steel>100</Steel>
@@ -445,6 +448,7 @@
       </layers>
       <tags>
         <li>IndustrialMilitaryAdvanced</li>
+        <li>EVA</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -454,5 +458,10 @@
     <thingCategories Inherit="False">
       <li>Headgear</li>
     </thingCategories>
+    <comps>
+      <li MayRequire="kentington.saveourship2">
+        <compClass>SaveOurShip2.CompEVA</compClass>
+      </li>
+    </comps>
   </ThingDef>
 </Defs>
