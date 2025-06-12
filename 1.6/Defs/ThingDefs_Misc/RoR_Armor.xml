@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="RoRArmorMakeableBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.5</generateCommonality>
+    <generateAllowChance>0.5</generateAllowChance>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+        <li>EVA</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  MERCENARY / BLADEMARINE ================================ -->
+  <ThingDef ParentName="RoRArmorMakeableBase">
+    <defName>RoRA_BladeMarine_Armor</defName>
+    <label>blademarine armor</label>
+    <description>Crafted from lightweight plasteel, this power armor is manufactured for troopers that are adept in close-quarters melee combat.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Body/Blademarine_Armor/Blademarine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>62000</WorkToMake>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.12</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.54</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>28</Insulation_Cold>
+      <Insulation_Heat>18</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.6</MoveSpeed>
+      <MeleeDodgeChance>0.15</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>120</Plasteel>
+      <DevilstrandCloth>40</DevilstrandCloth>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Body/Blademarine_Armor/Blademarine</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  COMMANDO / CONSCRIPT ================================ -->
+  <ThingDef ParentName="RoRArmorMakeableBase">
+    <defName>RoRA_Conscript_Armor</defName>
+    <label>conscript armor</label>
+    <description>A cheap, easilly produced power armor for military trainees, though it has gained popularity amongst glitterworld insurgents and well-trained pirates for its ease of manufacturing.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Body/Conscript_Armor/ConscriptArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.41</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.49</ArmorRating_Heat>
+      <Insulation_Cold>36</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.1</MoveSpeed>
+      <CarryingCapacity>15</CarryingCapacity>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Body/Conscript_Armor/ConscriptArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  ENFORCER / POLICE ================================ -->
+  <ThingDef ParentName="RoRArmorMakeableBase">
+    <defName>RoRA_Enforcer_Armor</defName>
+    <label>enforcer armor</label>
+    <description>A police power armor suitable for urban environments, often used in riots and by guards of high-value assets. Its heavy plating encumbers its wearer but provides more than sufficient defense from small-arms ballistics to molotov fire.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Body/Enforcer_Armor/EnforcerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>420</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.21</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.54</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.95</ArmorRating_Heat>
+      <Insulation_Cold>38</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.55</MoveSpeed>
+      <DoorOpenSpeed>0.5</DoorOpenSpeed>
+      <MeleeDodgeChance>-0.05</MeleeDodgeChance>
+      <CarryingCapacity>20</CarryingCapacity>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <Uranium>50</Uranium>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Body/Enforcer_Armor/EnforcerArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  ENGINEER ================================ -->
+  <ThingDef ParentName="RoRArmorMakeableBase">
+    <defName>RoRA_Engineer_Armor</defName>
+    <label>engineer armor</label>
+    <description>A bulky power armor boasting integrated precision robotics for construction.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Body/Engineer_Armor/EngineerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>62000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>12.5</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.93</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <Insulation_Cold>38</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+      <ConstructionSpeed>0.20</ConstructionSpeed>
+      <CarryingCapacity>10</CarryingCapacity>
+      <FixBrokenDownBuildingSuccessChance>0.20</FixBrokenDownBuildingSuccessChance>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Body/Engineer_Armor/EngineerArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ========================== SPECIALIST ================================ -->
+  <ThingDef ParentName="RoRArmorMakeableBase">
+    <defName>RoRA_Specialist_Armor</defName>
+    <label>specialist armor</label>
+    <description>Heavy duty power armor designed for those who are trained in precision shooting with advanced internal motors that are able to hold the heaviest wieldable guns which also helps in recoil control and maintaining a stable sight picture. Its frame supports the carriage of bulky equipment and ammunition while its plating provides adequate defense against enemy fire.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Body/Specialist_Armor/SpecialistArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>66000</WorkToMake>
+      <MaxHitPoints>380</MaxHitPoints>
+      <Mass>14</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>36</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <CarryingCapacity>25</CarryingCapacity>
+      <ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Plasteel>100</Plasteel>
+      <Uranium>40</Uranium>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Body/Specialist_Armor/SpecialistArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ========================== RANGER ================================ -->
+  <ThingDef ParentName="RoRArmorMakeableBase">
+    <defName>RoRA_Ranger_Armor</defName>
+    <label>ranger armor</label>
+    <description>Used primarilly by explorers and big game hunters for its low weight with armor thick enough to stop most animal attacks.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Body/Ranger_Armor/RangerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.49</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>14</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.3</MoveSpeed>
+      <ToxicResistance>0.25</ToxicResistance>
+      <HuntingStealth>0.6</HuntingStealth>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <DevilstrandCloth>30</DevilstrandCloth>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Body/Ranger_Armor/RangerArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ========================== MINER ================================ -->
+  <ThingDef ParentName="RoRArmorMakeableBase">
+    <defName>RoRA_Miner_Armor</defName>
+    <label>miner armor</label>
+    <description>A HAZMAT suit augmented with durable plating able to withstand harsh environments and the occasional encounters with hostile inhabitants.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Body/Miner_Armor/MinerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>11</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.02</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.49</ArmorRating_Heat>
+      <Insulation_Cold>42</Insulation_Cold>
+      <Insulation_Heat>18</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MiningSpeed>0.4</MiningSpeed>
+      <MoveSpeed>-0.5</MoveSpeed>
+      <ToxicResistance>0.50</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>100</Steel>
+      <Uranium>40</Uranium>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Waist</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Body/Miner_Armor/MinerArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>EVA</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Apparel</li>
+    </thingCategories>
+    <comps>
+      <li MayRequire="kentington.saveourship2">
+        <compClass>SaveOurShip2.CompEVA</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="RoRHeadgearMakeableBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.5</generateCommonality>
+    <generateAllowChance>0.5</generateAllowChance>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+        <li>EVA</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  MERCENARY ================================ -->
+  <ThingDef ParentName="RoRHeadgearMakeableBase">
+    <defName>RoRA_BladeMarine_Helmet</defName>
+    <label>blademarine helmet</label>
+    <description>Crafted from lightweight plasteel, this helmet is manufactured for troopers that are adept in close-quarters melee combat.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.5</generateCommonality>
+    <generateAllowChance>0.5</generateAllowChance>
+    <graphicData>
+      <texPath>Things/Apparel/Head/Blademarine_Helmet/BlademarineHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.1</Flammability>
+      <ArmorRating_Sharp>1.04</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.51</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      <Insulation_Cold>6</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>0.25</MeleeHitChance>
+      <MeleeDodgeChance>0.10</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <DevilstrandCloth>40</DevilstrandCloth>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Head/Blademarine_Helmet/BlademarineHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  COMMANDO / CONSCRIPT ================================ -->
+  <ThingDef ParentName="RoRHeadgearMakeableBase">
+    <defName>RoRA_Conscript_Helmet</defName>
+    <label>conscript helmet</label>
+    <description>A cheap, easilly produced helmet for military trainees. Despite its cheapness, the helmet has an entry-level yet reliable target-acquisition system that is still more than adequate for general use.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.5</generateCommonality>
+    <generateAllowChance>0.5</generateAllowChance>
+    <graphicData>
+      <texPath>Things/Apparel/Head/Conscript_Helmet/ConscriptHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.49</ArmorRating_Heat>
+      <Insulation_Cold>6</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>0.1</MeleeHitChance>
+      <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Head/Conscript_Helmet/ConscriptHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  ENFORCER ================================ -->
+  <ThingDef ParentName="RoRHeadgearMakeableBase">
+    <defName>RoRA_Enforcer_Helmet</defName>
+    <label>enforcer helmet</label>
+    <description>A police helmet suitable for urban environments, often used in riots and by guards of high-value assets. A sense of safety is felt when someone is seen on duty with this helmet, along with a bit of curiosity as to how much physical training has been done just to be able to walk with this on.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.5</generateCommonality>
+    <generateAllowChance>0.5</generateAllowChance>
+    <graphicData>
+      <texPath>Things/Apparel/Head/Enforcer_Helmet/EnforcerHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.18</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.52</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.85</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>-0.05</MeleeDodgeChance>
+      <DoorOpenSpeed>0.5</DoorOpenSpeed>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <costList>
+      <Uranium>40</Uranium>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Head/Enforcer_Helmet/EnforcerHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ==========================  ENGINEER ================================ -->
+  <ThingDef ParentName="RoRHeadgearMakeableBase">
+    <defName>RoRA_Engineer_Helmet</defName>
+    <label>engineer helmet</label>
+    <description>A helmet boasting an advanced computer that helps with construction efficiency with visual scanners that help in electrical troubleshooting.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.5</generateCommonality>
+    <generateAllowChance>0.5</generateAllowChance>
+    <graphicData>
+      <texPath>Things/Apparel/Head/Engineer_Helmet/EngineerHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>110</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.60</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <FixBrokenDownBuildingSuccessChance>0.20</FixBrokenDownBuildingSuccessChance>
+      <ConstructionSpeed>0.10</ConstructionSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Head/Engineer_Helmet/EngineerHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ========================== SPECIALIST ================================ -->
+  <ThingDef ParentName="RoRHeadgearMakeableBase">
+    <defName>RoRA_Specialist_Helmet</defName>
+    <label>specialist helmet</label>
+    <description>Heavy duty helmet designed for those who are trained in precision shooting with an integrated target acquisition system which helps the power armor to easily spot an enemy and respond to moving targets.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Head/Specialist_Helmet/SpecialistHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>32000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>3.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.41</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.50</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.25</AimingDelayFactor>
+      <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Uranium>20</Uranium>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Head/Specialist_Helmet/SpecialistHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ========================== RANGER ================================ -->
+  <ThingDef ParentName="RoRHeadgearMakeableBase">
+    <defName>RoRA_Ranger_Helmet</defName>
+    <label>ranger helmet</label>
+    <description>Used primarily by explorers and big game hunters for its low weight with armor thick enough to stop most animal attacks.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Head/Ranger_Helmet/RangerHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <MaxHitPoints>130</MaxHitPoints>
+      <Mass>1.8</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.01</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicResistance>0.25</ToxicResistance>
+      <HuntingStealth>0.3</HuntingStealth>
+    </equippedStatOffsets>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <DevilstrandCloth>20</DevilstrandCloth>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Head/Ranger_Helmet/RangerHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- ========================== MINER ================================ -->
+  <ThingDef ParentName="RoRHeadgearMakeableBase">
+    <defName>RoRA_Miner_Helmet</defName>
+    <label>miner helmet</label>
+    <description>A HAZMAT helmet augmented with durable plating able to withstand harsh environments and the occasional encounters with hostile inhabitants.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Head/Miner_Helmet/MinerHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>3.2</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.91</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.21</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.49</ArmorRating_Heat>
+      <Insulation_Cold>7</Insulation_Cold>
+      <Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <MiningSpeed>0.2</MiningSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
+      <ToxicResistance>0.50</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Uranium>20</Uranium>
+    </costList>
+    <recipeMaker>
+      <skillRequirements Inherit="False">
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Head/Miner_Helmet/MinerHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+        <li>EVA</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <thingCategories Inherit="False">
+      <li>Headgear</li>
+    </thingCategories>
+    <comps>
+      <li MayRequire="kentington.saveourship2">
+        <compClass>SaveOurShip2.CompEVA</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

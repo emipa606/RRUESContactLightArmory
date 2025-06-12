@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: blademarine helmet -->
+  <RoRA_BladeMarine_Helmet.label>blademarine helmet</RoRA_BladeMarine_Helmet.label>
+  <!-- EN: Crafted from lightweight plasteel, this helmet is manufactured for troopers that are adept in close-quarters melee combat. -->
+  <RoRA_BladeMarine_Helmet.description>Crafted from lightweight plasteel, this helmet is manufactured for troopers that are adept in close-quarters melee combat.</RoRA_BladeMarine_Helmet.description>
+  <!-- EN: conscript helmet -->
+  <RoRA_Conscript_Helmet.label>conscript helmet</RoRA_Conscript_Helmet.label>
+  <!-- EN: A cheap, easilly produced helmet for military trainees. Despite its cheapness, the helmet has an entry-level yet reliable target-acquisition system that is still more than adequate for general use. -->
+  <RoRA_Conscript_Helmet.description>A cheap, easilly produced helmet for military trainees. Despite its cheapness, the helmet has an entry-level yet reliable target-acquisition system that is still more than adequate for general use.</RoRA_Conscript_Helmet.description>
+  <!-- EN: enforcer helmet -->
+  <RoRA_Enforcer_Helmet.label>enforcer helmet</RoRA_Enforcer_Helmet.label>
+  <!-- EN: A police helmet suitable for urban environments, often used in riots and by guards of high-value assets. A sense of safety is felt when someone is seen on duty with this helmet, along with a bit of curiosity as to how much physical training has been done just to be able to walk with this on. -->
+  <RoRA_Enforcer_Helmet.description>A police helmet suitable for urban environments, often used in riots and by guards of high-value assets. A sense of safety is felt when someone is seen on duty with this helmet, along with a bit of curiosity as to how much physical training has been done just to be able to walk with this on.</RoRA_Enforcer_Helmet.description>
+  <!-- EN: engineer helmet -->
+  <RoRA_Engineer_Helmet.label>engineer helmet</RoRA_Engineer_Helmet.label>
+  <!-- EN: A helmet boasting an advanced computer that helps with construction efficiency with visual scanners that help in electrical troubleshooting. -->
+  <RoRA_Engineer_Helmet.description>A helmet boasting an advanced computer that helps with construction efficiency with visual scanners that help in electrical troubleshooting.</RoRA_Engineer_Helmet.description>
+  <!-- EN: miner helmet -->
+  <RoRA_Miner_Helmet.label>miner helmet</RoRA_Miner_Helmet.label>
+  <!-- EN: A HAZMAT helmet augmented with durable plating able to withstand harsh environments and the occasional encounters with hostile inhabitants. -->
+  <RoRA_Miner_Helmet.description>A HAZMAT helmet augmented with durable plating able to withstand harsh environments and the occasional encounters with hostile inhabitants.</RoRA_Miner_Helmet.description>
+  <!-- EN: ranger helmet -->
+  <RoRA_Ranger_Helmet.label>ranger helmet</RoRA_Ranger_Helmet.label>
+  <!-- EN: Used primarily by explorers and big game hunters for its low weight with armor thick enough to stop most animal attacks. -->
+  <RoRA_Ranger_Helmet.description>Used primarily by explorers and big game hunters for its low weight with armor thick enough to stop most animal attacks.</RoRA_Ranger_Helmet.description>
+  <!-- EN: specialist helmet -->
+  <RoRA_Specialist_Helmet.label>specialist helmet</RoRA_Specialist_Helmet.label>
+  <!-- EN: Heavy duty helmet designed for those who are trained in precision shooting with an integrated target acquisition system which helps the power armor to easily spot an enemy and respond to moving targets. -->
+  <RoRA_Specialist_Helmet.description>Heavy duty helmet designed for those who are trained in precision shooting with an integrated target acquisition system which helps the power armor to easily spot an enemy and respond to moving targets.</RoRA_Specialist_Helmet.description>
+</LanguageData>
