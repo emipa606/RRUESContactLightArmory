@@ -449,6 +449,7 @@
       <ToxicResistance>0.50</ToxicResistance>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
       <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
     </equippedStatOffsets>
     <costList>
       <Steel>100</Steel>

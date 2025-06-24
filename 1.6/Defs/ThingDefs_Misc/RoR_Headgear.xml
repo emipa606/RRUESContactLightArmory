@@ -427,6 +427,7 @@
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.50</ToxicEnvironmentResistance>
       <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
       <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <costList>
       <Steel>100</Steel>
@@ -439,6 +440,7 @@
       </skillRequirements>
     </recipeMaker>
     <apparel>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>

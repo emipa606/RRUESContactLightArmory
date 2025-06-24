@@ -1,5 +1,8 @@
 # Changelog for RRUESContactLightArmory
 
+1.6.2 - Fixed space-properties
+
+
 1.6.1 - Fixed unique asset bundle filename
 
 
