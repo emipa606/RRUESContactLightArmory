@@ -38,6 +38,9 @@
       </defaultOutfitTags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
+    <equippedStatOffsets>
+      <VacuumResistance>0.32</VacuumResistance>
+    </equippedStatOffsets>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>

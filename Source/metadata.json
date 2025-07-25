@@ -4,6 +4,12 @@
   "CanRemove": "2",
   "PreviewVersion": "1.6",
   "SocialImageSet": true,
-  "LastXmlCleaning": "2025-06-24T15:38:53.3467733+02:00",
-  "SearchTags": " risk of rain"
+  "LastXmlCleaning": "2025-07-25T22:40:33.2802431+02:00",
+  "SearchTags": " risk of rain",
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": false,
+  "LinesOfCode": 0,
+  "LinesOfXML": 35927,
+  "CodeBaseSize": 72
 }

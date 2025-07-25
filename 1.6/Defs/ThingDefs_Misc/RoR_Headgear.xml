@@ -17,6 +17,9 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
     </recipeMaker>
+    <equippedStatOffsets>
+      <VacuumResistance>0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -33,6 +36,7 @@
         <li>Soldier</li>
       </defaultOutfitTags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
     </apparel>
     <thingCategories>
       <li>Headgear</li>
