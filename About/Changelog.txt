@@ -1,5 +1,8 @@
 # Changelog for RRUESContactLightArmory
 
+1.6.4 - Fixed mayreqiure for Odyssey properties
+
+
 1.6.3 - Armors and helmets are now vac-sealed
 
 
